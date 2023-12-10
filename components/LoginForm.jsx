@@ -574,8 +574,21 @@ export default function LoginForm() {
       });
       return;
     }
-    if (!email || !password) {
-      toast.error("Please enter valid credentials", {
+    if (!email) {
+      toast.error("Iltimos login kiriting!!!", {
+        position: "top-center",
+        autoClose: 10000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      return;
+    }
+    if (!password) {
+      toast.error("Iltimos parol kiriting!", {
         position: "top-center",
         autoClose: 10000,
         hideProgressBar: false,
